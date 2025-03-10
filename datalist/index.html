@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website teaches users how to use HTML Datalist">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>HTML & CSS Sandbox - Datalist</title>
+</head>
+<body>
+    <h1>HTML & CSS Sandbox - Datalist</h1>
+    <!-- for general list select -->
+    <form>
+        <label for="favLanguage"> Favourite Programming Language </label>
+        <input list="Languages" id="favLanguage" name="favLanguage">
+        <datalist id="Languages">
+            <option value="JavaScript"></option>
+            <option value="Java"></option>
+            <option value="Python"></option>
+            <option value="TypeScript"></option>
+            <option value="Ruby"></option>
+            <option value="C++"></option>
+            <option value="C"></option>
+        </datalist>
+        <input type="submit" value="submit">
+    </form>
+
+    <div>
+        <p>Choose the time that fits your schedule</p>
+        <input list="popularHours" type="time">
+        <datalist id="popularHours">
+            <option value="10:00"></option>
+            <option value="13:00"></option>
+            <option value="16:00"></option>
+            <option value="19:00"></option>
+        </datalist>
+    </div>
+
+    <div>
+        <label for="tick">Tip Amount</label>
+        <input type="range" name="tick" id="tick" list="Cmovement" min="0" max="100">
+        <datalist id="Cmovement">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+        </datalist>
+    </div>
+
+    <div>
+        <label for="colors">Pick Color</label>
+        <input type="color" name="colors" id="colors" list="pick_color">
+        <datalist id="pick_color">
+            <option value="red"></option>
+            <option value="green"></option>
+            <option value="yellow"></option>
+            <option value="white"></option>
+
+
+        </datalist>
+    </div>
+
+
+</body>
+</html>

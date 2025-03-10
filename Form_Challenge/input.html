@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to use different HTML tags and input attributes to create a form in HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>HTML & CSS Sandbox</title>
+</head>
+<body>
+    <header>
+        <h1>Apartment Search</h1>
+    </header>
+    <main>
+        <form>
+
+        
+            <div>
+                <label for="location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Enter location">
+            </div>
+            
+            <div>
+                <label for="monthly_price">Price</label>
+                <input type="range" name="monthly_price" id="monthly_price" list="price_step" min="0" max="100">
+                <datalist id="price_step">
+                    <option value="0-100$"></option>
+                    <option value="100-200$"></option>
+                    <option value="200-300$"></option>
+                    <option value="300-400$"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="num_bedrooms">Bedrooms</label>
+                <input type="number" name="num_bedrooms" id="num_bedrooms" >
+            </div>
+            <br>
+            <div>
+                <label for="num_bathrooms">Bathrooms</label>
+                <input type="number" name="num_bathrooms" id="num_bathrooms" >
+            </div>
+    
+            <div>
+                <label for="pet">Pets 
+                    <input type="checkbox" name="pet" id="pet">      
+                </label>
+                
+                
+            </div>
+    
+            <div>
+                <label for="date_available">Date Available</label>
+                <input type="date">
+            </div>
+            <br>
+    
+            <input type="submit" value="submit">
+          
+        </form>
+        
+
+    </main>
+    
+
+    
+</body>
+</html>
